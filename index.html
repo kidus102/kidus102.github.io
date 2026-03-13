@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kidus Yared - Software Engineering Student specializing in backend development, API design, and database architecture. View my portfolio of projects and get in touch." />
+  <meta name="keywords" content="Software Engineer, Backend Developer, Full Stack Developer, Node.js, PostgreSQL, TypeScript, API Development" />
+  <meta name="author" content="Kidus Yared" />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kidus Yared | Software Engineering Student" />
+  <meta property="og:description" content="Aspiring Full-Stack Developer specializing in backend systems, APIs, and database architecture" />
+  
+  <title>Kidus Yared | Software Engineering Student</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="scroll-progress"></div>
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">KY</a>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="Kidus_Yared_CV.pdf" download class="btn-cv">📄 CV</a></li>
+        <li><button id="dark-mode-toggle" class="theme-toggle">🌙</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <img src="assets/profile.jpg" alt="Kidus Yared" class="profile-pic" />
+      <h1 class="hero-title">Hi, I'm <span class="highlight">Kidus Yared</span></h1>
+      <p class="hero-subtitle"><span class="typing-text"></span></p>
+      <p class="hero-description">
+        Specializing in backend systems, APIs, and database architecture
+      </p>
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/kidus102" target="_blank" aria-label="GitHub">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kidus-yared-2016a236b/" target="_blank" aria-label="LinkedIn">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&to=kidusy180@gmail.com" target="_blank" aria-label="Email">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a third-year Software Engineering student at <strong>Adama Science and Technology University</strong>, 
+            passionate about building robust backend systems and scalable applications.
+          </p>
+          <p>
+            My journey in software development has led me to specialize in API design, database architecture, 
+            and server-side technologies. I thrive on solving complex problems and turning ideas into functional, 
+            efficient code.
+          </p>
+          <p>
+            Currently seeking opportunities to apply my skills in real-world projects and contribute to 
+            innovative software solutions.
+          </p>
+          
+          <div class="education-highlight">
+            <h3>🎓 Education</h3>
+            <p><strong>Adama Science and Technology University</strong></p>
+            <p>Bachelor of Science in Software Engineering</p>
+            <p class="year">2022 - Present (3rd Year)</p>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <h3>3+</h3>
+            <p>Years of Study</p>
+          </div>
+          <div class="stat-card">
+            <h3>10+</h3>
+            <p>Technologies</p>
+          </div>
+          <div class="stat-card">
+            <h3>4+</h3>
+            <p>Major Projects</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-subtitle">Focused on backend systems, APIs, and database design</p>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Backend Development</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Express.js</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">TypeScript</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">REST APIs</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Database & Storage</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">PostgreSQL</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MongoDB</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SQL Server</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Database Design</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Frontend & Tools</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">HTML & CSS</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git & GitHub</span>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">A showcase of my recent work and technical capabilities</p>
+      
+      <div class="projects-grid">
+        <div class="project-card featured">
+          <div class="project-badge">Featured</div>
+          <div class="project-header">
+            <h3>Supermarket Management System</h3>
+            <div class="project-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">TypeScript</span>
+            </div>
+          </div>
+          <p class="project-description">
+            Comprehensive supermarket management system with inventory tracking, sales processing, employee management, 
+            and supplier coordination. Built with TypeScript for type safety and PostgreSQL for robust data management. 
+            Features real-time inventory updates, automated transaction processing, and comprehensive reporting dashboard.
+          </p>
+          <div class="project-features">
+            <span>✓ Inventory Management</span>
+            <span>✓ Sales & Transaction Processing</span>
+            <span>✓ Employee & Supplier Management</span>
+            <span>✓ Real-time Analytics</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/supermarket-pos-team/supermarket/tree/sms_fullstack" target="_blank" class="project-link">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              View Code
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Bookstore REST API</h3>
+            <div class="project-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">MongoDB</span>
+            </div>
+          </div>
+          <p class="project-description">
+            Full-featured RESTful API for bookstore operations with complete CRUD functionality. 
+            Implements user authentication with JWT, inventory management, order processing, and payment integration. 
+            Includes comprehensive API documentation with Swagger and automated testing suite.
+          </p>
+          <div class="project-features">
+            <span>✓ RESTful Architecture</span>
+            <span>✓ MongoDB Integration</span>
+            <span>✓ API Documentation</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kidus102/bookstore-api" target="_blank" class="project-link">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              View Code
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Logistics & Supply Chain Database</h3>
+            <div class="project-tags">
+              <span class="tag">SQL Server</span>
+              <span class="tag">Database Design</span>
+              <span class="tag">T-SQL</span>
+            </div>
+          </div>
+          <p class="project-description">
+            Enterprise-grade database system modeling national logistics and supply chain operations. 
+            Features complex entity relationships, optimized indexing strategies, stored procedures for business logic, 
+            and triggers for data integrity. Handles millions of records with efficient query performance.
+          </p>
+          <div class="project-features">
+            <span>✓ Normalized Schema</span>
+            <span>✓ Stored Procedures</span>
+            <span>✓ Performance Optimization</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kidus102/logistics-supply-chain-database" target="_blank" class="project-link">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              View Code
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Student Management System</h3>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">TCP Sockets</span>
+              <span class="tag">Client-Server</span>
+            </div>
+          </div>
+          <p class="project-description">
+            Multi-threaded client-server application using Java TCP sockets for real-time student data management. 
+            Implements concurrent connection handling, thread pooling, and synchronized data access. 
+            Features include student registration, grade management, and real-time notifications.
+          </p>
+          <div class="project-features">
+            <span>✓ Socket Programming</span>
+            <span>✓ Multi-threading</span>
+            <span>✓ Real-time Communication</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kidus102/java-socket-student-management" target="_blank" class="project-link">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              View Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">
+        I'm currently looking for new opportunities. Whether you have a question or just want to say hi, 
+        I'll try my best to get back to you!
+      </p>
+      
+      <div class="contact-grid">
+        <a href="https://mail.google.com/mail/?view=cm&to=kidusy180@gmail.com" target="_blank" class="contact-card">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <p>kidusy180@gmail.com</p>
+        </a>
+        
+        <a href="https://github.com/kidus102" target="_blank" class="contact-card">
+          <div class="contact-icon">💻</div>
+          <h3>GitHub</h3>
+          <p>@kidus102</p>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/kidus-yared-2016a236b/" target="_blank" class="contact-card">
+          <div class="contact-icon">🔗</div>
+          <h3>LinkedIn</h3>
+          <p>Kidus Yared</p>
+        </a>
+        
+        <a href="Kidus_Yared_CV.pdf" download class="contact-card">
+          <div class="contact-icon">📄</div>
+          <h3>Resume</h3>
+          <p>Download CV</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Kidus Yared. Built with passion and code.</p>
+      <p class="footer-subtitle">Software Engineering Student | Backend Developer</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path d="M5 15l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script>
+    // Loading screen
+    window.addEventListener('load', () => {
+      const loadingScreen = document.getElementById('loading-screen');
+      document.body.classList.add('loading');
+      
+      setTimeout(() => {
+        loadingScreen.classList.add('hidden');
+        document.body.classList.remove('loading');
+      }, 300);
+    });
+
+    // Typing animation for hero subtitle
+    const typingText = document.querySelector('.typing-text');
+    const texts = [
+      'Aspiring Full-Stack Developer',
+      'Backend Systems Specialist',
+      'Database Architecture Enthusiast',
+      'API Design Expert'
+    ];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeText() {
+      const currentText = texts[textIndex];
+      
+      if (isDeleting) {
+        typingText.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typingText.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      let typeSpeed = isDeleting ? 50 : 100;
+
+      if (!isDeleting && charIndex === currentText.length) {
+        typeSpeed = 2000;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        typeSpeed = 500;
+      }
+
+      setTimeout(typeText, typeSpeed);
+    }
+
+    // Start typing animation immediately
+    typeText();
+
+    // Back to top button
+    const backToTopBtn = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Scroll progress bar
+    window.addEventListener('scroll', () => {
+      const scrollProgress = document.querySelector('.scroll-progress');
+      const scrollTop = window.pageYOffset;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      scrollProgress.style.width = scrollPercent + '%';
+    });
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.section, .project-card, .skill-category, .stat-card').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Dark mode toggle with smooth transition
+    const toggle = document.getElementById('dark-mode-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (localStorage.getItem('darkMode') === 'enabled' || 
+        (!localStorage.getItem('darkMode') && prefersDark)) {
+      document.body.classList.add('dark-mode');
+      toggle.textContent = '☀️';
+    }
+
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      toggle.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+      
+      // Add ripple effect
+      const ripple = document.createElement('span');
+      ripple.style.cssText = `
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: ${isDark ? 'rgba(255, 255, 255, 0.5)' : 'rgba(59, 130, 246, 0.5)'};
+        transform: scale(0);
+        animation: ripple-effect 0.6s ease-out;
+        pointer-events: none;
+      `;
+      toggle.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 600);
+    });
+
+    // Navbar scroll effect
+    let lastScroll = 0;
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      
+      lastScroll = currentScroll;
+    });
+
+    // Skill bar animation
+    const skillBars = document.querySelectorAll('.skill-progress');
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'fillBar 1.5s ease-out forwards';
+        }
+      });
+    }, { threshold: 0.5 });
+
+    skillBars.forEach(bar => skillObserver.observe(bar));
+
+    // Add ripple animation keyframes
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes ripple-effect {
+        to {
+          transform: scale(4);
+          opacity: 0;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>
